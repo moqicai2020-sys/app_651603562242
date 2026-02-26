@@ -1,0 +1,18 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navLink {
+  position: relative;
+  z-index: 60;
+  pointer-events: auto !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .pageWrapper {
+    padding-bottom: 2rem;
+  }
+}

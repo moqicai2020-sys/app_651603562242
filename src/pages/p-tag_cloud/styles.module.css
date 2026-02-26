@@ -1,0 +1,110 @@
+
+
+.pageWrapper {
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.sidebarCollapsed {
+  width: 56px;
+}
+
+.sidebarExpanded {
+  width: 240px;
+}
+
+.mainContentExpanded {
+  margin-left: 240px;
+}
+
+.mainContentCollapsed {
+  margin-left: 56px;
+}
+
+.cardHover:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
+
+.navItemActive {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-right: 3px solid #2563eb;
+}
+
+.navItem:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+.searchFocus:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.tableRow:hover {
+  background-color: #f9fafb;
+}
+
+.tableRow {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tagItem {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.tagItem:hover {
+  background-color: #c7d2fe;
+  color: #312e81;
+  transform: translateY(-1px);
+}
+
+.tagCloudItem {
+  display: inline-block;
+  margin: 4px 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tagCloudItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tagSize1 { font-size: 14px; }
+.tagSize2 { font-size: 16px; }
+.tagSize3 { font-size: 18px; }
+.tagSize4 { font-size: 20px; }
+.tagSize5 { font-size: 22px; }
+.tagSize6 { font-size: 24px; }
+.tagSize7 { font-size: 26px; }
+.tagSize8 { font-size: 28px; }
+.tagSize9 { font-size: 30px; }
+.tagSize10 { font-size: 32px; }
+
+.tagColor1 { background-color: #dbeafe; color: #1e40af; }
+.tagColor2 { background-color: #e0e7ff; color: #3730a3; }
+.tagColor3 { background-color: #ddd6fe; color: #5b21b6; }
+.tagColor4 { background-color: #e8e5ff; color: #4338ca; }
+.tagColor5 { background-color: #f3e8ff; color: #7c2d12; }
+.tagColor6 { background-color: #fef3c7; color: #92400e; }
+.tagColor7 { background-color: #d1fae5; color: #065f46; }
+.tagColor8 { background-color: #a7f3d0; color: #047857; }
+.tagColor9 { background-color: #fecaca; color: #991b1b; }
+.tagColor10 { background-color: #fef2f2; color: #dc2626; }
+

@@ -1,0 +1,43 @@
+.pageWrapper {
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+.sidebarExpanded {
+  width: 250px;
+}
+
+.sidebarCollapsed {
+  width: 64px;
+}
+
+.mainContentExpanded {
+  margin-left: 250px;
+}
+
+.mainContentCollapsed {
+  margin-left: 64px;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navItem:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--primary);
+}
+
+.navItemActive {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--primary);
+}
+
+.tableRow {
+  transition: background-color 0.2s;
+}
+
+.tableRow:hover {
+  background-color: rgba(59, 130, 246, 0.05);
+}

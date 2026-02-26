@@ -1,0 +1,28 @@
+.pageWrapper {
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+.navLink {
+  position: relative;
+  z-index: 60;
+  pointer-events: auto !important;
+}
+
+.photoCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.photoOverlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photoCard:hover .photoOverlay {
+  opacity: 1;
+}

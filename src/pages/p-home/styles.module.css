@@ -1,0 +1,81 @@
+
+
+.pageWrapper {
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.sidebarCollapsed {
+  width: 56px;
+}
+
+.sidebarExpanded {
+  width: 240px;
+}
+
+.mainContentExpanded {
+  margin-left: 240px;
+  position: relative;
+  z-index: 10;
+}
+
+.mainContentCollapsed {
+  margin-left: 56px;
+  position: relative;
+  z-index: 10;
+}
+
+.cardHover:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
+
+.navItem {
+  position: relative;
+  z-index: 50;
+  pointer-events: auto !important;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.navItemActive {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-right: 3px solid #2563eb;
+  position: relative;
+  z-index: 50;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+.searchFocus:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.tableRow:hover {
+  background-color: #f9fafb;
+}
+
+.tagItem {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tagItem:hover {
+  background-color: #c7d2fe;
+  color: #312e81;
+}
+

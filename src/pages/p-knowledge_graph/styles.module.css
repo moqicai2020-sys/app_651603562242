@@ -1,0 +1,181 @@
+
+
+.pageWrapper {
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.sidebarCollapsed {
+  width: 56px;
+}
+
+.sidebarExpanded {
+  width: 240px;
+}
+
+.mainContentExpanded {
+  margin-left: 240px;
+}
+
+.mainContentCollapsed {
+  margin-left: 56px;
+}
+
+.navItemActive {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-right: 3px solid #2563eb;
+  position: relative;
+  z-index: 50;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.navItem {
+  position: relative;
+  z-index: 50;
+  pointer-events: auto !important;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.navItem:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+.searchFocus:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.graphContainer {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.graphNode {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.graphNode:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.graphNode.active {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+.graphLink {
+  position: absolute;
+  background: linear-gradient(to right, #cbd5e1, #94a3b8);
+  height: 2px;
+  transform-origin: left center;
+  z-index: 5;
+  opacity: 0.6;
+}
+
+.graphLink:hover {
+  opacity: 0.8;
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+}
+
+.nodeLabel {
+  position: absolute;
+  font-size: 12px;
+  color: #374151;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 15;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.graphNode:hover .nodeLabel {
+  opacity: 1;
+}
+
+.graphControls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+
+.controlBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.controlBtn:hover {
+  background: #f8fafc;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.nodeTooltip {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 25;
+  max-width: 250px;
+  display: none;
+}
+
+.nodeTooltip h4 {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.nodeTooltip p {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.nodeTooltip .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.nodeTooltip .tag {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 10px;
+}
+
